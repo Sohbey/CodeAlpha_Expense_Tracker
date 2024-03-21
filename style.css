@@ -1,0 +1,117 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5rem;
+    margin-top: 2rem;
+}
+h1,h2{
+    text-align: center;
+}
+h1{
+    background-color: #c2cac4;
+    padding: 1rem;
+    
+}
+.input-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    padding: 10px;
+}
+#category-select{
+    padding-right: 25px;
+    padding: 5px;
+}
+#amount{
+    padding-left: 50px;
+}
+#date{
+    padding-left: 50px;
+}
+.input-section label{
+    font-weight: bold;
+    margin-right: 2px;
+}
+.input-section input[type="number"], .input-section input[type="date"]{
+    padding: 5px;
+    margin-right: 2px;
+}
+.input-section button{
+    padding: 5px 10px;
+    background-color: rgb(238, 9, 9);
+    color:white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.expenses-list{
+    margin: 20px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th,td{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+
+}
+th{
+    background-color: rgb(215, 222, 38);
+    color: rgb(12, 1, 1);
+}
+tfoot td{
+    font-weight: bold;
+}
+.delete-btn{
+    padding: 5px 10px;
+    background-color: rgb(238, 9, 9);
+    color:white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#edit-form-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #edit-form-container h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  #edit-form-container label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #edit-form-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  #edit-form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #edit-form-container button:hover {
+    background-color: #45a049;
+  }
+  

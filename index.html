@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker By Sohbey</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- expense form starts -->
+
+    <h1>Track Your Expenses</h1>
+    <div class="input-section">
+      <label for="category-select"> Category: </label>
+      <select id="category-select">
+        <option value="">Select Category</option>
+        <option value="college-fee">College Fee</option>
+        <option value="rent">House Rent</option>
+        <option value="transport">Transport</option>
+        <option value="food">Food / Grocery</option>
+        <option value="shopping">Shopping</option>
+        <option value="friends">Friends</option>
+        <option value="outing">Outing</option>
+        <option value="other">Other</option>
+      </select>
+      
+      <label for="amount-input" id="amount"> Amount: </label>
+      <input type="number" id="amount-input" />
+      <label for="date-input" id="date"> Date: </label>
+      <input type="date" id="date-input" />
+      <button id="add-btn">Add</button>
+    </div>
+    <!-- expense form end -->
+
+    <!-- expense list start -->
+
+    <div class="expense-list">
+      <h2>Expense List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+
+        <tbody id="expense-table-body"></tbody>
+
+        <tfoot>
+          <td>Total:</td>
+          <td id="total-amount"></td>
+        </tfoot>
+      </table>
+    </div>
+    <!-- expense list end -->
+
+    <!-- Edit section form starts-->
+
+    <div id="edit-form-container">
+      <h2>Edit Expense</h2>
+      <form id="edit-form">
+        <label for="edit-category">Category:</label>
+        <input type="text" id="edit-category" required />
+        <label for="edit-amount">Amount:</label>
+        <input type="number" id="edit-amount" required />
+        <label for="edit-date">Date:</label>
+        <input type="date" id="edit-date" required />
+        <button type="button" id="save-edit-btn">Save</button>
+      </form>
+    </div>
+    <!-- Edit section form end-->
+
+    <script src="app.js"></script>
+  </body>
+</html>
