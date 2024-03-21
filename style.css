@@ -14,7 +14,7 @@ h1{
 .input-section{
     display: flex;
     flex-direction: row;
-    justify-content: stretch;
+    justify-content: center;
     align-items: center;
     padding: 10px;
 }
@@ -38,14 +38,19 @@ h1{
 }
 .input-section button{
     padding: 5px 10px;
-    background-color: rgb(238, 9, 9);
+    margin-left: 40px;
+    background-color: #45a049;
     color:white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
+.input-section button:hover {
+    background-color: #046e1b;
+}
 .expenses-list{
-    margin: 20px;
+    margin: 30px;
+    
 }
 
 table{
@@ -59,21 +64,35 @@ th,td{
 
 }
 th{
-    background-color: rgb(215, 222, 38);
+    background-color: #c2cac4;
     color: rgb(12, 1, 1);
+
 }
 tfoot td{
     font-weight: bold;
 }
 .delete-btn{
     padding: 5px 10px;
-    background-color: rgb(238, 9, 9);
+    background-color: #f30a0a;
     color:white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
-
+.delete-btn:hover {
+    background-color: #bd0000;
+}
+.edit-btn{
+    padding: 5px 10px;
+    background-color: #45a049;
+    color:white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.edit-btn:hover{
+    background-color: #046e1b;
+}
 #edit-form-container {
     display: none;
     position: fixed;
@@ -82,8 +101,10 @@ tfoot td{
     transform: translate(-50%, -50%);
     background-color: #fff;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #c2cac4;
+    
   }
   
   #edit-form-container h2 {
@@ -93,17 +114,20 @@ tfoot td{
   
   #edit-form-container label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    
   }
   
   #edit-form-container input {
-    width: 100%;
+    width: auto;
     padding: 8px;
     margin-bottom: 10px;
+    margin-left: 5px;
+
   }
   
   #edit-form-container button {
-    width: 100%;
+    width: auto;
     padding: 10px;
     background-color: #4caf50;
     color: #fff;
@@ -112,6 +136,6 @@ tfoot td{
   }
   
   #edit-form-container button:hover {
-    background-color: #45a049;
+    background-color: #046e1b;
   }
   
